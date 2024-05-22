@@ -1,7 +1,7 @@
 # Fencing cauclater
 # Author: Barnaby walker 
 # Date 22/05/2024
-# Verson: 1
+# Verson: 1.01
 
 print("Instuctions:")
 print()
@@ -27,8 +27,8 @@ while keepgoing=="Y":
     price=number_check("Price per meter of fence: $")
     width=number_check("Width: ")
     length=number_check("Length: ")
-    permeter=(width+length)*2
-    cost=(permeter)*price
+    perimeter=(width+length)*2
+    cost=(perimeter)*price
     print()
     print(f"Fencing pricing = ${cost} ")
     keepgoing=input("Continue? Y/N ")
