@@ -1,7 +1,7 @@
 # Fencing cauclater
 # Author: Barnaby walker 
-# Date 22/05/2024
-# Verson: 1.01
+# Date: 24/05/2024
+# Version: 1.2
 
 print("Instuctions:")
 print()
@@ -11,28 +11,27 @@ print("Then this program will cauclate the peremeter.")
 print("and cost of fencing of the land you wanted to")
 print("find the price of fencing off.")
 print()
-def number_check(Question):
+def number_check(question):
     Deaththreat="Put in a number bigger than 0. Or else.\n"
     while True:
         try:
-            number=float(input(Question))
+            number=float(input(question))
             if number>0:
                 return number
             else:
                 print(Deaththreat)
         except ValueError:
             print(Deaththreat)
-keepgoing="Y"
-while keepgoing=="Y":
+keepgoing=""
+while keepgoing=="":
     price=number_check("Price per meter of fence: $")
     width=number_check("Width: ")
     length=number_check("Length: ")
     perimeter=(width+length)*2
     cost=(perimeter)*price
     print()
-    print(f"Fencing pricing = ${cost} ")
-    keepgoing=input("Continue? Y/N ")
+    print(f"Fencing pricing = ${cost}")
+    keepgoing=input("Continue? Press enter to continue. ")
     print()
-    if keepgoing!=("N"):
-        keepgoing="Y"
-print("Thank you for using this program, please consider donating to Fencing Caulater NZ.")
+print("Thank you for using this program, please")
+print("consider donating to Fencing Caulater NZ.")
